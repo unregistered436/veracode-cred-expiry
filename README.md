@@ -17,9 +17,10 @@ Install dependencies:
 ```    [default]
     veracode_api_key_id = <YOUR_API_KEY_ID>
     veracode_api_key_secret = <YOUR_API_KEY_SECRET>
-
+```
     Otherwise you will need to set environment variables before running:
-    export VERACODE_API_KEY_ID=<YOUR_API_KEY_ID>
+
+```    export VERACODE_API_KEY_ID=<YOUR_API_KEY_ID>
     export VERACODE_API_KEY_SECRET=<YOUR_API_KEY_SECRET>
     python userapiexpiry.py
 ```
