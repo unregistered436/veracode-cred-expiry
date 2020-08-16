@@ -14,15 +14,16 @@ Install dependencies:
     sudo python3 -m pip install -r requirements.txt
 (Optional) Save Veracode API credentials in `~/.veracode/credentials`
 
-```    [default]
+```
+    [default]
     veracode_api_key_id = <YOUR_API_KEY_ID>
     veracode_api_key_secret = <YOUR_API_KEY_SECRET>
 ```
 Otherwise you will need to set environment variables before running:
 
-```    export VERACODE_API_KEY_ID=<YOUR_API_KEY_ID>
+``` 
+    export VERACODE_API_KEY_ID=<YOUR_API_KEY_ID>
     export VERACODE_API_KEY_SECRET=<YOUR_API_KEY_SECRET>
-    python userapiexpiry.py
 ```
     
 The Veracode Identity API is described further here: https://help.veracode.com/go/c_identity_intro
