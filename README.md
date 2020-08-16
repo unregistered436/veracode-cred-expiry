@@ -8,19 +8,21 @@ This tool will dump Veracode platform API credentials and their expiry dates. Ou
 
 ## Setup
 Clone this repository:
+```
     git clone https://github.com/unregistered436/veracode-api-cred-dump
+```
 Install dependencies:
+```
     cd veracode-api-cred-dump
     sudo python3 -m pip install -r requirements.txt
-(Optional) Save Veracode API credentials in `~/.veracode/credentials`
-
+```
+(Recommended) Save Veracode API credentials in `~/.veracode/credentials`
 ```
     [default]
     veracode_api_key_id = <YOUR_API_KEY_ID>
     veracode_api_key_secret = <YOUR_API_KEY_SECRET>
 ```
 Otherwise you will need to set environment variables before running:
-
 ``` 
     export VERACODE_API_KEY_ID=<YOUR_API_KEY_ID>
     export VERACODE_API_KEY_SECRET=<YOUR_API_KEY_SECRET>
