@@ -1,4 +1,4 @@
-# Dump Veracode API Credential Expiry Dates
+# Veracode API Credential Expiry Date Report
 This tool will create a CSV report of Veracode platform API credential user names, emails, and their expiry dates. Output can be restricted to only "API" accounts used for CI/CD integrations, or "human" users which are typically developers.
 
 ## Requirements
