@@ -1,5 +1,5 @@
 # Dump Veracode API Credential Expiry Dates
-This tool will dump Veracode platform API credential user names, emails, and their expiry dates. Output can be restricted to only "API" accounts used for CI/CD integrations, or "human" users which are typically developers.
+This tool will create a CSV report of Veracode platform API credential user names, emails, and their expiry dates. Output can be restricted to only "API" accounts used for CI/CD integrations, or "human" users which are typically developers.
 
 ## Requirements
 * Python3.6 and above
@@ -9,11 +9,11 @@ This tool will dump Veracode platform API credential user names, emails, and the
 ## Setup
 Clone this repository:
 ```
-    git clone https://github.com/unregistered436/veracode-api-cred-dump
+    git clone https://github.com/unregistered436/veracode-cred-expiry
 ```
 Install dependencies:
 ```
-    cd veracode-api-cred-dump
+    cd veracode-cred-expiry
     sudo python3 -m pip install -r requirements.txt
 ```
 (Recommended) Save Veracode API credentials in `~/.veracode/credentials`
@@ -32,10 +32,10 @@ The Veracode Identity API is described further here: https://help.veracode.com/g
     
 ## Run
 If you have saved credentials as above you can run:
-    `python3 dump-cred-dates.py -f <YOUR_FILE_NAME>`
+    `python3 cred-expiry.py -f <YOUR_FILE_NAME>`
 
 ## Usage
-```Usage: python3 dump-cred-dates.py [options] arg1 arg2
+```Usage: python3 cred-expiry.py [options] arg1 arg2
 
 Options:
   --version             show program's version number and exit
