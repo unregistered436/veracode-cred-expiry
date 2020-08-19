@@ -23,7 +23,7 @@ def get_user_api_expiration(expiry,credtype,start_time):
                 cred_status="Expired"
             else:
                 cred_status="Active"
-            expiry.append((user["user_name"],user["email_address"],date_time,cred_status))
+            expiry.append((user["user_name"],user["email_address"],userdata["api_credentials"]["api_id"],date_time,cred_status))
         
         percent = ("{0:.0f}".format(100*(count/float(length))))
         filledLength=int(100*count // length)
@@ -63,7 +63,7 @@ def main():
     print("Retrieving {} user information. Please be patient, this may take some time...".format(crednote))
     get_user_api_expiration(expiry,credtype,start_time)
     
-    csv_header = ["User Name", "Email Address", "Expiry Date","Credential Status"]
+    csv_header = ["User Name", "Email Address", "API ID", "Expiry Date","Credential Status"]
     print("Writing to CSV file {}".format(filename))
     create_csv([csv_header] + expiry, filename)
 
